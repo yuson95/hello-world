@@ -437,7 +437,7 @@ def calcu_cost_spec(s):
         liquid_sation.liquid_cryogenic_tank_design()['e_boiloff_storage']
     price_h2 = 9.5  # €/kg
     cost_lost = price_h2 * \
-        (e_lost_compressor+e_boiloff_pump+e_boiloff_tank)
+        (e_lost_compressor + e_boiloff_pump+e_boiloff_tank)
     var_OPEX = cost_electric + cost_lost
     # total cost
     cost_spec_total = CAPEX + fix_OPEX + var_OPEX
